@@ -6,6 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +15,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "news")
 @NoArgsConstructor
 @Data
+@AllArgsConstructor
+@Builder
 public class New {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

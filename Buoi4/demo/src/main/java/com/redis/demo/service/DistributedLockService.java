@@ -14,8 +14,8 @@ public class DistributedLockService {
     private StringRedisTemplate redisTemplate;
 
     public String acquireLock(String lockKey, long expireSeconds) {
-        String lockValue = UUID.randomUUID().toString();
-        Boolean success = redisTemplate.opsForValue().setIfAbsent(lockKey, lockValue, expireSeconds, TimeUnit.SECONDS);
+        String lockValue = UUID.randomUUID().toString(); // Generate a unique lock value to identify the lock owner
+        Boolean success = redisTemplate.opsForValue().setIfAbsent(lockKey, lockValue, expireSeconds, TimeUnit.SECONDS); // Try to set the lock if it DOESN'T exist
         return Boolean.TRUE.equals(success) ? lockValue : null;
     }
 
