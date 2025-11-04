@@ -1,6 +1,5 @@
 package com.booking.demo.service;
 
-import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.stereotype.Service;
 
 import com.booking.demo.model.Room;
