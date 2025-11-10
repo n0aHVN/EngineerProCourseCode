@@ -1,4 +1,4 @@
-package com.redis.demo.config;
+package com.redis.lock.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

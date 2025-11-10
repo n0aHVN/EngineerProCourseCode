@@ -1,4 +1,4 @@
-package com.redis.demo.dto;
+package com.redis.lock.dto;
 
 import lombok.Data;
 

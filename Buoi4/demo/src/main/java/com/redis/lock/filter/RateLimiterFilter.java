@@ -1,4 +1,4 @@
-package com.redis.demo.filter;
+package com.redis.lock.filter;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

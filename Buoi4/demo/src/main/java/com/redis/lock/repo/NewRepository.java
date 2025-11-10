@@ -1,8 +1,8 @@
-package com.redis.demo.repo;
+package com.redis.lock.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.redis.demo.model.New;
+import com.redis.lock.model.New;
 
 public interface NewRepository extends JpaRepository<New, Integer> {
     public New findBySlug(String slug);

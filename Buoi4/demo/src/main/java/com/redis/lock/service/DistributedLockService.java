@@ -1,4 +1,4 @@
-package com.redis.demo.service;
+package com.redis.lock.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

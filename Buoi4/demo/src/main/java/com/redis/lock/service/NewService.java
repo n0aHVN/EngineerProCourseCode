@@ -1,12 +1,13 @@
-package com.redis.demo.service;
+package com.redis.lock.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import com.redis.demo.model.New;
-import com.redis.demo.repo.NewRepository;
+import com.redis.lock.model.New;
+import com.redis.lock.repo.NewRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 import lombok.RequiredArgsConstructor;
 

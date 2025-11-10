@@ -1,9 +1,10 @@
-package com.redis.demo.config;
+package com.redis.lock.config;
 
-import com.redis.demo.filter.RateLimiterFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.redis.lock.filter.RateLimiterFilter;
 
 @Configuration
 public class FilterConfig {

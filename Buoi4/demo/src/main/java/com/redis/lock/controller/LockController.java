@@ -1,8 +1,9 @@
-package com.redis.demo.controller;
+package com.redis.lock.controller;
 
-import com.redis.demo.service.DistributedLockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.redis.lock.service.DistributedLockService;
 
 @RestController
 @RequestMapping("/lock")

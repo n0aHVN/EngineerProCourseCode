@@ -1,11 +1,10 @@
-package com.redis.demo.controller;
+package com.redis.lock.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.redis.demo.dto.CreateNewRequest;
-import com.redis.demo.dto.NewResponse;
-import com.redis.demo.model.New;
-import com.redis.demo.service.NewService;
+import com.redis.lock.dto.CreateNewRequest;
+import com.redis.lock.model.New;
+import com.redis.lock.service.NewService;
 
 import lombok.RequiredArgsConstructor;
 
