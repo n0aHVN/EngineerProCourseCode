@@ -1,0 +1,12 @@
+# Use the official Grafana Docker image as the base
+FROM grafana/grafana:latest
+
+# Optionally, copy custom configuration files (uncomment and adjust if needed)
+# COPY grafana.ini /etc/grafana/grafana.ini
+# COPY provisioning /etc/grafana/provisioning
+
+# Expose the default Grafana port
+EXPOSE 3000
+
+# Run Grafana
+CMD ["grafana-server"]
